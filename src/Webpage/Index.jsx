@@ -4,6 +4,8 @@ import Hero from "./Hero"
 import Collections from "./Collections"
 import Signature from "./Signature"
 import BrandStory from "./BrandStory"
+import WhyUs from "./WhyUs"
+import ConsulationBanner from './ConsulationBanner'
 
 
 const index = () => {
@@ -14,7 +16,9 @@ const index = () => {
     <Collections />
     <Signature />
     <BrandStory />
+    <WhyUs />
+    <ConsulationBanner />
     </div>
   )
 }
-export default index
+export default index 

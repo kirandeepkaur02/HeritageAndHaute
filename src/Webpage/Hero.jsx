@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 const Hero = () => {
   return (
-    <div className="relative h-svh min-h-180 w-full overflow-hidden">
+    <div className="   relative h-svh min-h-180 w-full overflow-hidden">
         <img 
          src={Herobride}
           alt="Indian bride in maroon and gold hand-embroidered bridal lehenga"
@@ -52,14 +52,16 @@ text-[0.72rem]
 font-medium
 tracking-[0.28em]
 uppercase
-bg-orange-200
+bg-amber-800
 text-[oklch(0.99_0.005_85)]
-border
-border-(--gold)
+ border
+ border-transparent
+hover:border-amber-800
 transition-all
 duration-400
 hover:bg-transparent
-hover:text-(--gold)">
+
+">
             Explore Collection
           </a>
           <a href="#consultation" className="inline-flex
