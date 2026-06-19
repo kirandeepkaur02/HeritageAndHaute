@@ -3,7 +3,7 @@ import NavBar from "./Navbar"
 import Hero from "./Hero"
 import Collections from "./Collections"
 import Signature from "./Signature"
-
+import BrandStory from "./BrandStory"
 
 
 const index = () => {
@@ -13,6 +13,7 @@ const index = () => {
     <Hero />
     <Collections />
     <Signature />
+    <BrandStory />
     </div>
   )
 }
