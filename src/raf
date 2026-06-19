@@ -1,0 +1,38 @@
+
+
+
+
+function Navbar() {
+  return (
+    <header className="absolute top-0 left-0 right-0 z-50">
+      <div className="mx-auto max-w-375 px-6 lg:px-12 py-6 flex items-center justify-between text-[oklch(0.99_0.005_85)]">
+        <nav className="hidden lg:flex items-center gap-9 text-[0.72rem] tracking-[0.22em] uppercase font-medium flex-1">
+          {navLinks.slice(0, 3).map((l) => (
+            <a key={l.label} href={l.href} className="hover:text-(--gold-soft) transition-colors">
+              {l.label}
+            </a>
+          ))}
+        </nav>
+
+        <a href="#top" className="flex flex-col items-center gap-1 mx-auto lg:mx-0">
+          <span className="serif-display text-2xl lg:text-3xl tracking-[0.18em]">AANYA</span>
+          <span className="text-[0.55rem] tracking-[0.5em] text-(--gold-soft)">
+            — COUTURE —
+          </span>
+        </a>
+
+        <nav className="hidden lg:flex items-center gap-9 text-[0.72rem] tracking-[0.22em] uppercase font-medium flex-1 justify-end">
+          {navLinks.slice(3).map((l) => (
+            <a key={l.label} href={l.href} className="hover:text-(--gold-soft) transition-colors">
+              {l.label}
+            </a>
+          ))}
+          <a href="#consultation" className="btn-gold py-3! px-5!">
+            <Calendar className="w-3.5 h-3.5" />
+            Book Appointment
+          </a>
+        </nav>
+      </div>
+    </header>
+  );
+}
