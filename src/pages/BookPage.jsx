@@ -20,14 +20,14 @@ const BookPage = () => {
                 <div className="mx-auto max-w-375 px-6 lg:px-12 py-6 flex items-center justify-between">
                     <Link
                         to="/"
-                        className="inline-flex items-center gap-2 text-[0.7rem] tracking-[0.25em] uppercase text-[oklch(0.99_0.005_85)] hover:text-[var(--gold-soft)] transition-colors"
+                        className="inline-flex items-center gap-2 text-[0.7rem] tracking-[0.25em] uppercase text-[oklch(0.99_0.005_85)] hover:text-[#B08D57] transition-colors"
                     >
                         <ArrowLeft className="w-3.5 h-3.5" strokeWidth={1.5} />
                         Back to Home
                     </Link>
                     <div className="flex flex-col items-center gap-1">
                         <span className="serif-display text-xl lg:text-2xl tracking-[0.18em] text-[oklch(0.99_0.005_85)]">Heritaze And Haute</span>
-                        <span className="text-[0.5rem] tracking-[0.5em] text-[var(--gold-soft)]">
+                        <span className="text-[0.5rem] tracking-[0.5em] text-[#B08D57]">
                             — COUTURE —
                         </span>
                     </div>
@@ -41,14 +41,14 @@ const BookPage = () => {
                     alt="ConsultationRoom"
                     className='absolute inset-0   w-full h-full object-cover'
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/40 to-black/70" />
+                <div className="absolute inset-0 bg-linear-to-b from-black/55 via-black/40 to-black/70" />
 
                 <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 text-[oklch(0.99_0.005_85)]">
                     <motion.p
                         initial={{ opacity: 0, y: 12 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="eyebrow !text-[var(--gold-soft)]"
+                        className="eyebrow text-[#B08D57]"
                     >
                         <span className="gold-line">Private Appointments</span>
                     </motion.p>
@@ -86,7 +86,7 @@ const BookPage = () => {
                         className="lg:col-span-7"
                     >{submitted ? (
                         <div className="bg-[oklch(0.95_0.018_82)] p-12 lg:p-16 text-center">
-                            <div className="w-12 h-12 mx-auto flex items-center justify-center border border-[var(--gold)] text-[var(--gold)]">
+                            <div className="w-12 h-12 mx-auto flex items-center justify-center border border-[#B08D57] text-[#B08D57]">
                                 <Calendar className="w-5 h-5" strokeWidth={1.2} />
                             </div>
                             <h2 className="serif-display mt-8 text-3xl">Request Received</h2>
@@ -107,7 +107,7 @@ const BookPage = () => {
                                         required
                                         type="text"
                                         placeholder="Your name"
-                                        className="w-full bg-transparent border-b border-border py-3 text-sm placeholder:text-muted-foreground outline-none focus:border-[var(--gold)] transition-colors"
+                                        className="w-full bg-transparent border-b border-border py-3 text-sm placeholder:text-muted-foreground outline-none focus:border-[#B08D57] transition-colors"
                                     />
                                 </div>
                                 <div className="space-y-2">
@@ -116,7 +116,7 @@ const BookPage = () => {
                                         required
                                         type="email"
                                         placeholder="your@email.com"
-                                        className="w-full bg-transparent border-b border-border py-3 text-sm placeholder:text-muted-foreground outline-none focus:border-[var(--gold)] transition-colors"
+                                        className="w-full bg-transparent border-b border-border py-3 text-sm placeholder:text-muted-foreground outline-none focus:border-[#B08D57] transition-colors"
                                     />
                                 </div>
                             </div>
@@ -127,7 +127,7 @@ const BookPage = () => {
                                         required
                                         type="tel"
                                         placeholder="+91 ..."
-                                        className="w-full bg-transparent border-b border-border py-3 text-sm placeholder:text-muted-foreground outline-none focus:border-[var(--gold)] transition-colors"
+                                        className="w-full bg-transparent border-b border-border py-3 text-sm placeholder:text-muted-foreground outline-none focus:border-[#B08D57] transition-colors"
                                     />
                                 </div>
                                 <div className="space-y-2">
@@ -135,7 +135,7 @@ const BookPage = () => {
                                     <input
                                         required
                                         type="date"
-                                        className="w-full bg-transparent border-b border-border py-3 text-sm placeholder:text-muted-foreground outline-none focus:border-[var(--gold)] transition-colors"
+                                        className="w-full bg-transparent border-b border-border py-3 text-sm placeholder:text-muted-foreground outline-none focus:border-[#B08D57] transition-colors"
                                     />
                                 </div>
                             </div>
@@ -144,7 +144,7 @@ const BookPage = () => {
                                 <label className="eyebrow text-[#B08D57]">Appointment Type</label>
                                 <select
                                     required
-                                    className="w-full bg-transparent border-b border-border py-3 text-sm text-foreground outline-none focus:border-[var(--gold)] transition-colors cursor-pointer"
+                                    className="w-full bg-transparent border-b border-border py-3 text-sm text-foreground outline-none focus:border-[#B08D57] transition-colors cursor-pointer"
                                     defaultValue=""
                                 >
                                     <option value="" disabled className="text-muted-foreground">
@@ -162,7 +162,7 @@ const BookPage = () => {
                                 <textarea
                                     rows={4}
                                     placeholder="Tell us about your wedding date, colour preferences, and any inspiration you have in mind..."
-                                    className="w-full bg-transparent border-b border-border py-3 text-sm placeholder:text-muted-foreground outline-none focus:border-[var(--gold)] transition-colors resize-none"
+                                    className="w-full bg-transparent border-b border-border py-3 text-sm placeholder:text-muted-foreground outline-none focus:border-[#B08D57] transition-colors resize-none"
                                 />
                             </div>
 

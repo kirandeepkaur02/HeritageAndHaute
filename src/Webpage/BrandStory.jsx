@@ -3,7 +3,7 @@ import {motion } from  "motion/react";
 import atelier from "../assets/atelier.jpg"
 
 const BrandStory = () => {
-  
+
   return (
     <div id="about"
     className="py-28 lg:py-40 px-6 lg:px-12">
@@ -37,7 +37,7 @@ const BrandStory = () => {
               ["120+", "Master karigars"],
             ].map(([n, l]) => (
               <div key={l}>
-                <p className="serif-display text-3xl text-[var(--gold)]">{n}</p>
+                <p className="serif-display text-3xl text-[#B08D57]">{n}</p>
                 <p className="mt-2 text-[0.65rem] tracking-[0.25em] uppercase text-muted-foreground">{l}</p>
               </div>
             ))}

@@ -391,7 +391,7 @@ return (
                                     }}
                                     className="group"
                                 >
-                                    <div className="relative overflow-hidden bg-[#1C1C1C]/5 aspect-[3/4]">
+                                    <div className="relative overflow-hidden bg-[#1C1C1C]/5 aspect-3/4">
 
                                        
 
@@ -399,7 +399,7 @@ return (
                                             src={p.image}
                                             alt={p.name}
                                             loading="lazy"
-                                            className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-110"
+                                            className="w-full h-full object-cover transition-transform duration-1200 ease-out group-hover:scale-110"
                                         />
  <div className="absolute inset-0 ring-1 ring-transparent group-hover:ring-[#B08D57] transition-all duration-500 z-10 pointer-events-none" />
 
@@ -560,7 +560,7 @@ return (
                                 <X className="h-4 w-4" />
                             </button>
 
-                            <div className="aspect-[3/4] md:aspect-auto bg-[#1C1C1C]/5">
+                            <div className="aspect-3/4 md:aspect-auto bg-[#1C1C1C]/5">
                                 <img
                                     src={quickView.image}
                                     alt={quickView.name}
