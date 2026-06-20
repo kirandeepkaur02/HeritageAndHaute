@@ -6,8 +6,7 @@ import BookPage from './pages/BookPage'
 
 function App() {
 
-
-  return (
+ return (
    
       <Routes>
         <Route path="/" element={<Index />} />
@@ -17,5 +16,4 @@ function App() {
     
   )
 }
-
 export default App

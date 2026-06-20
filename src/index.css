@@ -13,7 +13,8 @@
   font-weight: 500;
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: [#B08D57];
+  
 }
 
 @utility btn-gold {
@@ -26,12 +27,16 @@
   font-weight: 500;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  background: brown;
+
+  background: #B08D57;      /* bg-[#B08D57] */
   color: oklch(0.99 0.005 85);
-  border: 1px solid brown;
+
+  border: 1px solid #B08D57; /* border-[#B08D57] */
+
   transition: all 0.4s ease;
+
   &:hover {
     background: transparent;
-    color: var(--gold);
+    color: #B08D57;
   }
 }

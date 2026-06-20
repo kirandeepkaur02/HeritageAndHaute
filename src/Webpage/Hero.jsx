@@ -55,11 +55,11 @@ text-[0.72rem]
 font-medium
 tracking-[0.28em]
 uppercase
-bg-amber-800
+bg-[#B08D57]
 text-[oklch(0.99_0.005_85)]
  border
  border-transparent
-hover:border-amber-800
+hover:border-[#B08D57]
 transition-all
 duration-400
 hover:bg-transparent
@@ -67,13 +67,13 @@ hover:bg-transparent
 ">
             Explore Collection
           </button>
-          <button onClick={()=>navigate("/BookPage")}
-          className="inline-flex
+          <button onClick={() => navigate("/BookPage")}
+            className="inline-flex
 items-center
 justify-center
 gap-2
 px-8
-py-[0.95rem]
+py-[0.95rem] 
 text-[0.72rem]
 font-medium
 tracking-[0.28em]

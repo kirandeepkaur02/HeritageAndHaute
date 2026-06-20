@@ -1,8 +1,10 @@
 import React from 'react'
 import { Calendar } from "lucide-react";
-
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+
+   const navigate = useNavigate();
 
     const navLinks = [
         { label: "Home", href: "#top" },
@@ -51,8 +53,8 @@ const Navbar = () => {
                         >
                             {l.label}
                         </a>))}
-                    <a
-                        href="#consultation"
+                    <button onClick={()=>navigate("/BookPage")}
+                        
                         className="inline-flex
 items-center
 justify-center
@@ -63,10 +65,10 @@ text-[0.72rem]
 font-medium
 tracking-[0.28em]
 uppercase
-bg-(--gold)
+bg-[#B08D57]
 text-[oklch(0.99_0.005_85)]
 border
-border-(--gold)
+border-transparent
 transition-all
 duration-400
 hover:bg-transparent
@@ -74,13 +76,10 @@ hover:text-(--gold)"
                     >
                         <Calendar className="w-3.5 h-3.5 " />
                         Book Appointment
-                    </a>
+                    </button>
                 </nav>
             </div>
-
-
         </div>
     )
 }
-
 export default Navbar
