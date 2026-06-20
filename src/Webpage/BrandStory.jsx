@@ -3,6 +3,7 @@ import {motion } from  "motion/react";
 import atelier from "../assets/atelier.jpg"
 
 const BrandStory = () => {
+  
   return (
     <div id="about"
     className="py-28 lg:py-40 px-6 lg:px-12">

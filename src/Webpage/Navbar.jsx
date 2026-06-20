@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className="fixed top-0 left-0 right-0 z-50">
             <div
                 className={`mx-auto max-w-375 px-6 lg:px-12 py-6 flex items-center justify-between transition-all duration-300
-    ${scrolled          ? "bg-[oklch(0.99_0.005_85)] text-[#B08D57]"
+    ${scrolled          ? "bg-[oklch(0.99_0.005_85)] text-[#B08D57]   border-b-2  border-[#B08D57]"
                         : "bg-transparent text-[oklch(0.99_0.005_85)]"
                     }`}
             >
@@ -35,7 +35,7 @@ const Navbar = () => {
                         <a
                             key={l.label}
                             href={l.href}
-                            className="hover:text-(--gold-soft) transition-colors"
+                            className="hover:text-[#B08D57] transition-colors"
                         >
                             {l.label}
                         </a>
@@ -82,6 +82,7 @@ border-transparent
 transition-all
 duration-400
 hover:bg-transparent
+hover:border-[#B08D57]
 hover:text-(--gold)"
                     >
                         <Calendar className="w-3.5 h-3.5 " />
