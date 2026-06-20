@@ -10,7 +10,7 @@ const Navbar = () => {
         { label: "Bridal Couture", href: "#signature" },
         { label: "Lookbook", href: "#lookbook" },
         { label: "About", href: "#about" },
-        { label: "Contact", href: "#contact" },
+        // { label: "Contact", href: "#contact" },
 
     ]
 

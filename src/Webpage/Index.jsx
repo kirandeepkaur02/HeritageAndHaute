@@ -6,6 +6,7 @@ import Signature from "./Signature"
 import BrandStory from "./BrandStory"
 import WhyUs from "./WhyUs"
 import ConsulationBanner from './ConsulationBanner'
+import LookBook from './LookBook'
 
 
 const index = () => {
@@ -18,6 +19,7 @@ const index = () => {
     <BrandStory />
     <WhyUs />
     <ConsulationBanner />
+    <LookBook />
     </div>
   )
 }
