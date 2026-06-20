@@ -1,25 +1,35 @@
 import React from 'react'
 import { Calendar } from "lucide-react";
 import { useNavigate } from 'react-router-dom';
+import { useState, useEffect } from "react"
 
 const Navbar = () => {
 
-   const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const navLinks = [
         { label: "Home", href: "#top" },
         { label: "Collections", href: "#collections" },
-        { label: "Bridal Couture", href: "#signature" },
-        { label: "Lookbook", href: "#lookbook" },
+         { label: "Lookbook", href: "#lookbook" },
         { label: "About", href: "#about" },
-        // { label: "Contact", href: "#contact" },
+]
 
-    ]
+    const [scrolled, setScrolled] = useState(false);
 
+    useEffect(() => {
+        const onScroll = () => setScrolled(window.scrollY > 50);
+        window.addEventListener("scroll", onScroll);
+        return () => window.removeEventListener("scroll", onScroll);
+    }, []);
 
     return (
-        <div className="absolute top-0 left-0 right-0 z-50">
-            <div className="mx-auto max-w-375 px-6 lg:px-12 py-6 flex items-center justify-between text-[oklch(0.99_0.005_85)]">
+        <div className="fixed top-0 left-0 right-0 z-50">
+            <div
+                className={`mx-auto max-w-375 px-6 lg:px-12 py-6 flex items-center justify-between transition-all duration-300
+    ${scrolled          ? "bg-[oklch(0.99_0.005_85)] text-[#B08D57]"
+                        : "bg-transparent text-[oklch(0.99_0.005_85)]"
+                    }`}
+            >
                 <nav className="hidden lg:flex items-center gap-9 text-[0.72rem] tracking-[0.22em] uppercase font-medium flex-1">
                     {navLinks.slice(0, 3).map((l) => (
                         <a
@@ -53,8 +63,8 @@ const Navbar = () => {
                         >
                             {l.label}
                         </a>))}
-                    <button onClick={()=>navigate("/BookPage")}
-                        
+                    <button onClick={() => navigate("/BookPage")}
+
                         className="inline-flex
 items-center
 justify-center

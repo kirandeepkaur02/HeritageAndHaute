@@ -10,8 +10,11 @@ import {
   ArrowUpRight
  
 } from "lucide-react";
+import { useNavigate } from 'react-router-dom';
+
 const Collections = () => {
 
+  
 
   const collections = [
     { title: "Bridal Couture", caption: "The Heirloom Edit", image:ColBridal },
@@ -22,7 +25,7 @@ const Collections = () => {
     { title: "Custom Designs", caption: "Atelier Bespoke", image: ColCustom },
   ]
   return (
-    <div className="py-28  bg-[#F9F5ED] lg:py-40 px-6 lg:px-12">
+    <div id="collections" className="py-28  bg-[#F9F5ED] lg:py-40 px-6 lg:px-12">
       <div className="mx-auto max-w-375">
         <div className="text-center mb-20">
           <p className='font-display text-[0.7rem] font-medium tracking-[0.32em] uppercase text-gold'><span className="gold-line">The Edit</span></p>

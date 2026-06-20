@@ -21,7 +21,7 @@ const LookBook = () => {
     { src: look6, h: "row-span-2" },
   ];
   return (
-    <div  className="py-28 lg:py-40 px-6 lg:px-12  bg-[oklch(0.95_0.018_82)]">
+    <div  id="lookbook" className="py-28 lg:py-40 px-6 lg:px-12  bg-[oklch(0.95_0.018_82)]">
          <div className="mx-auto   max-w-375 ">
              <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
                 <div>

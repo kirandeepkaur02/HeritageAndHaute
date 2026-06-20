@@ -1,11 +1,16 @@
 import React from 'react'
 import consultation from "../assets/Consultation.jpg"
 import { motion } from "motion/react";
-import {Calendar} from "lucide-react";
+import { Calendar } from "lucide-react";
+import { useNavigate } from 'react-router-dom';
+
 const ConsulationBanner = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className="relative min-h-190  py-32 lg:py-44 px-6 overflow-hidden">
-         <img
+      <img
         src={consultation}
         alt="Aanya bridal consultation suite"
         loading="lazy"
@@ -32,12 +37,13 @@ const ConsulationBanner = () => {
           Two unhurried hours with our head couturier. A glass of chai, your mood
           board, and the beginning of something that will be only yours.
         </p>
-        <a className="btn-gold mt-12">
+        <button onClick={()=>navigate("/BookPage")}
+          className="btn-gold mt-12">
           <Calendar className="w-3.5 h-3.5" />
           Schedule Appointment
-        </a>
+        </button>
       </motion.div>
-     </div>
+    </div>
   )
 }
 export default ConsulationBanner

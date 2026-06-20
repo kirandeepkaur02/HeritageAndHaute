@@ -1,22 +1,12 @@
 import React from 'react'
-import {
-  
-  Mail,
-  MapPin,
-  Phone,
-  
-} from "lucide-react";
-
+import {Mail, MapPin, Phone} from "lucide-react";
 
 const Footer = () => {
   return (
-     <footer
-      id="contact"
-      className="bg-[oklch(0.16_0.005_60)] text-[oklch(0.92_0.01_80)] pt-24 pb-10 px-6 lg:px-12"
-    >
-      <div className="mx-auto max-w-375">
+     <footer  className="bg-black text-[oklch(0.92_0.01_80)] pt-24 pb-10 px-6 lg:px-12">
+    <div className="mx-auto max-w-375">
         <div className="grid lg:grid-cols-12 gap-12 pb-16 border-b border-white/10">
-          <div className="lg:col-span-4">
+           <div className="lg:col-span-4">
             <div className="flex flex-col gap-1">
               <span className="serif-display text-3xl tracking-[0.18em]">Heritage</span>
               <span className="text-[0.55rem] tracking-[0.5em] text-[#B08D57]">
@@ -29,7 +19,7 @@ const Footer = () => {
             </p>
 
             <form className="mt-10" onSubmit={(e) => e.preventDefault()}>
-              <p className="eyebrow !text-[#B08D57] mb-4">Newsletter</p>
+              <p className="eyebrow text-[#B08D57] mb-4">Newsletter</p>
               <div className="flex border-b border-white/30 focus-within:border-text-[#B08D57] transition-colors">
                 <input
                   type="email"
@@ -44,9 +34,9 @@ const Footer = () => {
           </div>
 
           <div className="lg:col-span-2 lg:col-start-6">
-            <p className="eyebrow !text-[#B08D57] mb-6">House</p>
+            <p className="eyebrow text-[#B08D57] mb-6">House</p>
             <ul className="space-y-3 text-sm text-white/70">
-              {["Bridal Couture", "Lehengas", "Sarees", "Festive", "Lookbook"].map((x) => (
+              {["Bridal Couture", "Lehengas", "Sarees", "Festive"].map((x) => (
                 <li key={x}>
                   <a href="#" className="hover:text-[#B08D57] transition-colors">
                     {x}
@@ -57,9 +47,9 @@ const Footer = () => {
           </div>
 
           <div className="lg:col-span-2">
-            <p className="eyebrow !text-[#B08D57] mb-6">Atelier</p>
+            <p className="eyebrow text-[#B08D57] mb-6">Atelier</p>
             <ul className="space-y-3 text-sm text-white/70">
-              {["Brand Story"].map((x) => (
+              {["Brand Story","LookBook","Consulation"].map((x) => (
                 <li key={x}>
                   <a href="#" className="hover:text-[#B08D57] transition-colors">
                     {x}
@@ -70,7 +60,7 @@ const Footer = () => {
           </div>
 
           <div className="lg:col-span-3">
-            <p className="eyebrow !text-[#B08D57] mb-6">Visit</p>
+            <p className="eyebrow text-[#B08D57] mb-6">Visit</p>
             <ul className="space-y-4 text-sm text-white/70">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-0.5 text-[#B08D57] shrink-0" strokeWidth={1.3} />
@@ -110,7 +100,5 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
-
-export default Footer
+)}
+export default Footer 

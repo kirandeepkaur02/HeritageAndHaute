@@ -4,7 +4,8 @@ import atelier from "../assets/atelier.jpg"
 
 const BrandStory = () => {
   return (
-    <div className="py-28 lg:py-40 px-6 lg:px-12">
+    <div id="about"
+    className="py-28 lg:py-40 px-6 lg:px-12">
           <div className="mx-auto max-w-350 grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <motion.div
           initial={{ opacity: 0, y: 20 }}

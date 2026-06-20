@@ -27,7 +27,7 @@ const Hero = () => {
         >
           Where Tradition Meets
           <br />
-          <em className="not-italic text-(--gold-soft) font-normal">Timeless Elegance</em>
+          <em className="not-italic text-[#B08D57] font-normal">Timeless Elegance</em>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
