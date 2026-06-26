@@ -216,7 +216,7 @@ const BookPage = () => {
                                         <Mail className="w-4 h-4 mt-0.5 text-(--gold) shrink-0" strokeWidth={1.3} />
                                         <div>
                                             <p className="text-sm font-medium">Email</p>
-                                            <p className="text-sm text-muted-foreground mt-1">atelier@aanyacouture.com</p>
+                                            <p className="text-sm text-muted-foreground mt-1">info@HeritageAndHaute.com</p>
                                         </div>
                                     </div>
                                 </div>

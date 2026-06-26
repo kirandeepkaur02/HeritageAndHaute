@@ -64,8 +64,7 @@ const Signature = () => {
           </ul>
           <button onClick={() => naviagte("/Products")}
 
-            className='btn-gold mt-12
- View The Collection'> View The Collection</button>
+            className=' '> View The Collection</button>
         </motion.div>
 
 

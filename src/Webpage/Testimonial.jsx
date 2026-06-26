@@ -31,7 +31,7 @@ const Testimonial = () => {
       <div className="mx-auto max-w-325">
         <div className="text-center mb-20">
           <p className="eyebrow text-[#B08D57]"><span className="gold-line">Brides of Heritage And Haute</span></p>
-          <h2 className="serif-display mt-6 text-4xl sm:text-5xl">Words from our brides</h2>
+          <h2 className="serif-display mt-6 text-4xl sm:text-5xl">Words from our brides...</h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

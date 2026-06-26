@@ -595,7 +595,7 @@ return (
                                 <div className="mt-auto pt-8 flex flex-col gap-3">
 
                                     <Link
-                                        to="/consultation"
+                                        to="/Bookpage"
                                         className="text-center bg-[#1C1C1C] text-[#FAF7F2] py-3 text-xs tracking-[0.3em] uppercase hover:bg-[#B08D57] transition"
                                     >
                                         Book a Fitting
